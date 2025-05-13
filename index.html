@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookNest - Rent Books</title>
+  <script defer src="script.js"></script>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+    min-height: 100vh;
+  }
+  .box1{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 30px;
+  }
+  .main{
+    display: flex;
+    gap: 20px;
+  }
+  .box2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .box2 img{
+    width: 170px;
+  }
+  .first{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+  }
+  .second{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .onush{
+    border: 1px solid rgb(82, 82, 82);
+    padding: 16px;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+  }
+  h1{
+    margin: 20px;
+  }
+  .burger{
+    display: none;
+  }
+  .cart-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background: white;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 250px;
+  }
+  @media screen and (max-width: 450px) {
+    body{
+      width: 450px;
+    }
+    .first{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .second{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .burger{
+      display: block;
+    }
+    .main{
+      display: none;
+    }
+    .active{
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      font-weight: bold;
+      height: 300px;
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 70px;
+      left: 180px;
+      padding: 20px;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="box1">
+      <p style="font-weight: bold;">BookNest</p>
+      <img class="burger" src="nav2 — копия.png" width="40px">
+      <div class="main">
+        <p>Home</p>
+        <p>Browse</p>
+        <p class="cart">Cart</p>
+      </div>
+    </div>
+
+    <h1>Available Books</h1>
+    <div class="box2">
+
+      <div class="first">
+        <div class="one">
+          <a href="one.html">
+            <img src="assets/sample-books/book-1984.jpg">
+          </a>       
+          <h3>1984</h3>
+          <p>by Author 2</p>
+          <p>$1.50 / day</p>
+          <button class="bir">Rent</button>
+        </div>
+  
+        <div class="two">
+          <a href="two.html">
+            <img src="assets/sample-books/book-alchemist.jpg">
+          </a>
+          <h3>The Hobbit</h3>
+          <p>by Author 3</p>
+          <p>$2.00 / day</p>
+          <button class="eki">Rent</button>
+        </div>
+  
+        <div class="three">
+          <a href="three.html">
+            <img src="assets/sample-books/book-anna.jpg">
+          </a>
+          <h3>To Kill a
+            Mockingbird</h3>
+          <p>by Author 4</p>
+          <p>$1.50 / day</p>
+          <button class="ush">Rent</button>
+        </div>
+  
+        <div class="four">
+          <a href="four.html">
+            <img src="assets/sample-books/book-bravenew.jpg">
+          </a>
+          <h3>Pride and Prejudice</h3>
+          <p>by Author 5</p>
+          <p>$1.50 / day</p>
+          <button class="tort">Rent</button>
+        </div>
+  
+        <div class="five">
+          <a href="five.html">
+            <img src="assets/sample-books/book-catcher.jpg">
+          </a>
+          <h3>Moby-Dick</h3>
+          <p>by Author 6</p>
+          <p>$1.50 / day</p>
+          <button class="bes">Rent</button>
+        </div>
+  
+        <div class="six">
+          <a href="six.html">
+            <img src="assets/sample-books/book-crime.jpg">
+          </a>
+          <h3>War and Peace</h3>
+          <p>by Author 7</p>
+          <p>$1.50 / day</p>
+          <button class="alty">Rent</button>
+        </div>
+  
+        <div class="seven">
+          <a href="seven.html">
+            <img src="assets/sample-books/book-donquixote.jpg">
+          </a>
+          <h3>The Great
+            Gatsby</h3>
+          <p>by Author 8</p>
+          <p>$1.50 / day</p>
+          <button class="zheti">Rent</button>
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="eight">
+          <a href="eight.html">
+            <img src="assets/sample-books/book-gatsby.jpg">
+          </a>
+          <h3>The Catcher in the Rye</h3>
+          <p>by Author 9</p>
+          <p>$1.50 / day</p>
+          <button class="sekiz">Rent</button>
+        </div>
+  
+        <div class="nine">
+          <a href="nine.html">
+            <img src="assets/sample-books/book-hobbit.jpg">
+          </a>
+          <h3>lorem</h3>
+          <p>by Author 10</p>
+          <p>$1.50 / day</p>
+          <button class="tokuz">Rent</button>
+        </div>
+  
+        <div class="ten">
+          <a href="ten.html">
+            <img src="assets/sample-books/book-janeeyre.jpg">
+          </a>
+          <h3>OOne</h3>
+          <p>by Author 11</p>
+          <p>$1.50 / day</p>
+          <button class="on">Rent</button>
+        </div>
+  
+        <div class="twelve">
+          <a href="twelve.html">
+            <img src="assets/sample-books/book-lesmis.jpg">
+          </a>
+          <h3>TWO</h3>
+          <p>by Author 12</p>
+          <p>$1.50 / day</p>
+          <button class="onbir">Rent</button>
+        </div>
+  
+        <div class="onush">
+          <a href="onush.html">
+            <img src="assets/sample-books/book-mobydick.jpg">
+          </a>
+          <h3>Sony</h3>
+          <p>by Author 13</p>
+          <p>$1.50 / day</p>
+          <button class="oneki">Rent</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
